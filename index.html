@@ -1,57 +1,84 @@
 <!DOCTYPE html>
-<html lang="es"> <!-- Cambiar a español-->
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
     
-    <title>¿Qué es HTML? </title>
-    <meta name="description" content="Definición y explicación de que es HTML"/>
-    <meta name="keywords" content="HTML, Informática, Internet, Definición, Hipertexto, Marcas, Etiquetas, Web,"/>
-
-    <meta name="author" content="Jane Dough" />
-    <meta name="copyright" content="Jane Dough" />
-    
-    <meta name="robots" content="index,follow" />
-
-    <meta http-equiv="cache-control" content="no-cache"/>
-
+    <style>
+        body {
+            background-color: #fbe7c6; /* Color de fondo suave */
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #ff6f61; /* Color de texto del título */
+            background-color: #a0e7e5; /* Fondo del título */
+            padding: 20px;
+            border-radius: 0; /* Sin bordes redondeados para que ocupe el ancho completo */
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 0; /* Sin margen para que no se desplace */
+            width: 100%; /* Ocupa el ancho completo */
+        }
+        h3 {
+            color: #333333; /* Color del subtítulo */
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #b4f8c8; /* Fondo de los botones */
+            border: none;
+            color: #333333; /* Texto de los botones */
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s;
+            margin: 10px 0; /* Margen vertical entre botones */
+        }
+        .button:hover {
+            background-color: #ffaebc; /* Color al pasar el ratón */
+            transform: scale(1.05);
+        }
+        .description {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 16px;
+            color: #333333;
+        }
+        .links {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 14px;
+            color: #555555;
+        }
+    </style>
 </head>
 <body>
+    <h1>Mi blog personal</h1>
+    
+    <div class="description">
+        <p>Este es el ejercicio 2, que consiste en crear tu propia página HTML sencilla.</p>
+        <p>He decidido decorarlo y usar CSS para mejorar la estética y aprender más sobre diseño web.</p>
+    </div>
+    
+    <ul style="list-style-type: none; padding: 0;"> <!-- Elimina los puntos de la lista -->
+        <li><a class="button" href="/files/pag2.html">Ir a la página 2: Tipos de conejos</a></li>
+        <li><a class="button" href="files/pag3.html">Ir a la página 3: Asignaturas DAM</a></li>
+    </ul>
 
-<h3>¿Qué es HTML?</h3>
-
-<a href="/Sesion2.html"> Ir a la sesión 2</a>
-
-
-<p>
-    <h4>HTML: Lenguaje de etiquetas de hipertexto</h4>
-    <p>
-        <b>HTML</b> (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico de la Web. Define el significado y la estructura del contenido web. Además de HTML, generalmente se utilizan otras tecnologías para describir la apariencia/presentación de una página web (CSS) o la funcionalidad/comportamiento (JavaScript).
-        <p>
-            <b>"Hipertexto"</b> hace referencia a los enlaces que conectan páginas web entre sí, ya sea dentro de un único sitio web o entre sitios web. Los enlaces son un aspecto fundamental de la Web. Al subir contenido a Internet y vincularlo a las páginas creadas por otras personas, te conviertes en un participante activo en la «World Wide Web» (Red Informática Mundial).
-            <p>
-                HTML utiliza <b>"marcas"</b> para etiquetar texto, imágenes y otro contenido para mostrarlo en un navegador Web. Las  marcas HTML incluyen "elementos" especiales como &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, &lt;p&gt;, &lt;div&gt;, &lt;span&gt;, &lt;img&gt;, &lt;aside&gt;, &lt;audio&gt;, &lt;canvas&gt;, &lt;datalist&gt;, &lt;details&gt;, &lt;embed&gt;, &lt;nav&gt;, &lt;output&gt;, &lt;progress&gt;, &lt;video&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; y muchos otros.
-            </p>
-
-            <p>
-                Un elemento HTML se distingue de otro texto en un documento mediante "etiquetas", que consisten en el nombre del elemento rodeado por "&lt;" y "&gt;". El nombre de un elemento dentro de una etiqueta no distingue entre mayúsculas y minúsculas. Es decir, se puede escribir en mayúsculas, minúsculas o una mezcla. Por ejemplo, la etiqueta &lt;title&gt; se puede escribir como &lt;Title&gt;, &lt;TITLE&gt; o de cualquier otra forma.
-            </p>
-
-            <p>Etiquetas iniciales o de raíz:
-            </p>
-
-            <p>Doctype: 
-                &lt;!DOCTYPE html&gt; Indica al navegador que el documento está basado en el estándar HTML5
-            </p>
-
-            <p>
-                Html:
-                &lt;html&gt; &lt;/html&gt; Representa la raíz de un documento HTML. Todos los demás elementos de la estructura HTML deben ser recogidos dentro de estas etiquetas.
-            </p>
-        </p> 
-    </p>
-</p>
-
-
+    <div class="links">
+        <p>Enlaces de investigación:</p>
+        <ul>
+            <li><a href="#" target="_blank">Enlace 1</a></li>
+            <li><a href="#" target="_blank">Enlace 2</a></li>
+            <li><a href="#" target="_blank">Enlace 3</a></li>
+        </ul>
+    </div>
 </body>
 </html>
